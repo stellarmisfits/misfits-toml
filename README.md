@@ -1,4 +1,4 @@
-# Astrify
+# misfits
 
 This repository holds the source code for the [stellarmisfits](https://stellarmisfits.site) website. misfits makes it easy to manage custom [stellar.toml](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0001.md#issuer-documentation) files.
 
