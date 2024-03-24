@@ -1,8 +1,38 @@
 # misfits
 
-This repository holds the source code for the [stellarmisfits](https://stellarmisfits.site) website. misfits makes it easy to manage custom [stellar.toml](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0001.md#issuer-documentation) files.
+git clone <repository_url> <folder_name>
+Install Composer Dependencies
+composer install
 
-## Contributions Under Repository License
-Contributions to this repository are subject to the inbound=outbound licensing rules found in Github's [terms of service](https://help.github.com/en/articles/github-terms-of-service#6-contributions-under-repository-license).
+Generate an application key.
+php artisan key:generate
 
-Essentially the inbound=outbound rule means that whenever you make a contribution to a repository containing notice of a license, you license your contribution under the same terms, and you agree that you have the right to license your contribution under those terms.
+Duplicate the .env.example file and rename it to .env.
+Open the .env file and set your database connection details.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+
+Run database migrations to create tables.
+php artisan migrate
+
+Seed the Database (Optional)
+php artisan db:seed
+
+Install Node.js Dependencies (Optional)
+npm install
+# or
+yarn install
+
+Compile Assets (Optional)
+npm run dev
+# or
+yarn dev
+
+Start the Development Server
+php artisan serve
+
+Setting up an existing Laravel project from Git may seem daunting at first, but by following these step-by-step instructions, you can quickly get the project up and running in your local development environment. Whether you’re a newcomer to the project or an experienced Laravel developer, these steps will ensure a smooth onboarding process.
