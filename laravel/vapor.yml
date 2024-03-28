@@ -7,7 +7,7 @@ environments:
         cli-memory: 512
         balancer: kaboodle
         database: kaboodle
-        domain: '*.astrify.com'
+        domain: '*celestial stellartomlfiles.com'
         build:
             - 'composer install --no-dev --classmap-authoritative'
             - 'php artisan event:cache'
