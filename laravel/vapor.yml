@@ -1,8 +1,8 @@
 id: 594
-name: astrify
+name: misfits
 environments:
     production:
-        storage: astrify
+        storage: misfits
         memory: 512
         cli-memory: 512
         balancer: kaboodle
@@ -16,12 +16,12 @@ environments:
         deploy:
             - 'php artisan migrate --force'
     staging:
-        storage: astrify-dev
+        storage: misfits-dev
         memory: 512
         cli-memory: 512
         balancer: kaboodle
         database: kaboodle
-        domain: '*.astrify.dev'
+        domain: '*.misfits.dev'
         build:
             - 'composer install --classmap-authoritative'
             - 'php artisan event:cache'
